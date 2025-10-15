@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TextInput, View, Text, Button, StyleSheet } from "react-native";
+import { TextInput, View, Text, Button, StyleSheet, Alert } from "react-native";
 
 const HailstoneSequence = () => {
     const [number, setNumber] = useState(0);
@@ -7,6 +7,11 @@ const HailstoneSequence = () => {
     function generateSequence() {
         const sequence = [];
         let n = number;
+
+        if (n <= 0) {
+            Alert.alert("Error", "Number must be greater than 0");
+            return;
+        }
 
         sequence.push(n);
         while (n !== 1) {

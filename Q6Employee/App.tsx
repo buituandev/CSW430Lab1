@@ -26,7 +26,7 @@ function App() {
 function AppContent() {
   return (
     <SafeAreaView style={styles.container}>
-      <Information title="Employee Information" fullname="Bui Anh Tuan" age="25" occupation="Software Engineer" />
+      <Information title="Employee Information" fullname="Bui Anh Tuan" age="25" occupation="Software Engineer" specialized="React Native" />
     </SafeAreaView>
   );
 }

@@ -18,6 +18,9 @@ export default Information = (props) => {
             <Text>Occupation:</Text>
             <Text>{props.occupation}</Text>
 
+            <Text>Specialized in training:</Text>
+            <Text>{props.specialized}</Text>
+
             <View>
                 <Button title="Update" onPress={handleUpdate} />
             </View>
